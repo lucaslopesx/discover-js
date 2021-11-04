@@ -48,20 +48,17 @@ function sayMyOS(os) {
     console.log('antes de executar a callback')
     os()
     console.log('depois de executar a callback')
-
 }
 
-sayMyOS(
-    () => {
-        console.log('[estou em uma callback]')
-    }
-)
+sayMyOS(() => {
+    console.log('[estou em uma callback]')
+})
 
 
 console.log('----------function constructor----------')
 function Person(name) {
     this.name = name
-    this.walk = function(){
+    this.walk = function () {
         return this.name + " está andando"
     }
 }

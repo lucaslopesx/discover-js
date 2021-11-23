@@ -26,10 +26,11 @@ function convertToCelsiusAndFahrenheit(degree) {
 }
 
 try {
-    console.log(convertToCelsiusAndFahrenheit("10°C"));
-    console.log(convertToCelsiusAndFahrenheit("50°F"));
-    console.log(convertToCelsiusAndFahrenheit("37°C"));
-    console.log(convertToCelsiusAndFahrenheit("37°F"));
+    console.log("10°C -> " + convertToCelsiusAndFahrenheit("10°C"));
+    console.log("50°F -> " + convertToCelsiusAndFahrenheit("50°F"));
+    console.log("37°C -> " + convertToCelsiusAndFahrenheit("37°C"));
+    console.log("37°F -> " + convertToCelsiusAndFahrenheit("37°F"));
+    console.log("37°F -> " + convertToCelsiusAndFahrenheit("re"));
 } catch (error) {
     console.log(error);
 }
